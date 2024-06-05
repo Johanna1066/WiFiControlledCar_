@@ -1,3 +1,6 @@
+#ifndef _WCC_STEERINGSERVO_H
+#define _WCC_STEERINGSERVO_H
+
 #include "ESP32Servo.h"
 
 /**
@@ -15,37 +18,23 @@
 class SteeringServo
 {
 private:
-    int servoPIN{}; // The pin connected to the servo
+    // The pin connected to the servo
+    int servoPIN{}; 
 
-    int direction{60}; // Current direction, initialized to 60
+    // Current direction, initialized to 60
+    int direction{60}; 
 
-    Servo servoObject; // Servo object from the ESP32Servo library
+    // Servo object from the ESP32Servo library
+    Servo servoObject; 
 
 public:
-    /**
-     * @brief Constructs a SteeringServo object.
-     * 
-     * @param engineServoPIN The pin number where the servo is connected.
-     */
     SteeringServo(int engineServoPIN);
 
-    /**
-     * @brief Destructor for the SteeringServo object.
-     */
-    ~SteeringServo();
+    ~SteeringServo() = default;
 
-    /**
-     * @brief Initializes the servo.
-     * 
-     * Performs all necessary electronic setup for the hardware to work properly.
-     */
     void initiateServo();
 
-    /**
-     * @brief Sets the direction of the servo.
-     * 
-     * @param newDirection The new direction to set, rescaled using the Arduino
-     * map function to the desired range for the servo.
-     */
     void setDirection(int newDirection);
 };
+
+#endif //_WCC_STEERINGSERVO_H
