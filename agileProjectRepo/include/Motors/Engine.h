@@ -1,3 +1,6 @@
+#ifndef _WCC_ENGINE_H
+#define _WCC_ENGINE_H
+
 /*
  * The Engine class is responsible for controlling the speed of the engines.
  * The members engineVelocityPIN(int), enginePositivePIN(int), and
@@ -13,42 +16,31 @@
 class Engine
 {
 private:
-    int engineVelocityPIN{};
-    int enginePositivePIN{};
-    int engineNegativePIN{};
+    // Pin for controlling velocity
+    int engineVelocityPIN;
 
-    int currentVelocity{};
-    bool direction{true}; // true = forward, false = backwards
+    // Pin for forward direction
+    int enginePositivePIN;
+
+    // Pin for backward direction
+    int engineNegativePIN;
+
+    // Current velocity of the engine
+    int currentVelocity;
+
+    // true = forward, false = backwards
+    bool direction;
 
 public:
-    /**
-     * @brief Constructs an Engine object.
-     *
-     * @param velocityPIN The pin number for controlling velocity.
-     * @param positivePIN The pin number for forward direction.
-     * @param negativePIN The pin number for backward direction.
-     */
     Engine(int velocityPIN, int positivePIN, int negativePIN);
 
-    ~Engine();
+    ~Engine() = default;
 
-    /**
-     * @brief Sets the velocity of the engine.
-     *
-     * @param newVelocity The new velocity to set, rescaled using the Arduino
-     * map function to the desired range for the engine.
-     * @param obstacle Indicates if there is an obstacle in the way (true if obstacle present,
-     * false otherwise). If true, the engine should hinder forward movement.
-     */
     void setVelocity(int, bool);
 
-    /**
-     * @brief Reverses the direction of the engine.
-     */
     void directionReverse();
 
-    /**
-     * @brief Initializes the engine.
-     */
     void intitateEngine();
 };
+
+#endif //_WCC_ENGINE_H
