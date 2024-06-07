@@ -1,5 +1,4 @@
-#Car Control System Project README
-
+# Arduino Joystick Controller Project
 ##Car Control System Project
 
 This project focuses on controlling a car using an Arduino Nano ESP32. It integrates steering, velocity, obstacle detection, and communication using the ESP-NOW protocol.
