@@ -35,17 +35,19 @@ This project focuses on controlling a car using an Arduino Nano ESP32. It integr
 
    git clone [ https://github.com/Johanna1066/WiFiControlledCar_Car/](https://github.com/Johanna1066/WiFiControlledCar_Car)
    
-3. **Open the Project in Arduino IDE**
+2. **Open the Project in Arduino IDE**
 Open the .ino file from the cloned repository in the Arduino IDE.
 
-4. **Install Required Libraries**
+3. **Install Required Libraries**
 Required libraries: esp_now.h, WiFi.h, ESP32Servo.h, and semphr.
 
-5. **Upload the Code**
+4. **Upload the Code**
 Connect your Arduino Nano ESP32 to your computer and upload the code.
 
-6. **Download the Controller Repository**
+5. **Download the Controller Repository**
 Make sure to download the repository for the controller as well.
+[ https://github.com/Johanna1066/WiFiControlledCar_Controller/](https://github.com/Johanna1066/WiFiControlledCar_Controller)
+
 
 ### Hardware Requirements
 - Arduino Nano ESP32
