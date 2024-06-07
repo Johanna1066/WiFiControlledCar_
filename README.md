@@ -9,7 +9,6 @@ This project focuses on controlling a car using an Arduino Nano ESP32. It integr
   - [Setup](#setup)
   - [Hardware Requirements](#hardware-requirements)
   - [Software Requirements](#software-requirements)
-  - [Installation Steps](#installation-steps)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Acknowledgements](#acknowledgements)
@@ -48,12 +47,12 @@ Connect your Arduino Nano ESP32 to your computer and upload the code.
 6. **Download the Controller Repository**
 Make sure to download the repository for the controller as well.
 
-## Hardware Requirements
+### Hardware Requirements
 -Arduino Nano ESP32
 -SteeringServo
 -Engine
 -USsensor (Ultrasonic Sensor)
-## Software Requirements
+### Software Requirements
 -Arduino IDE
 -ESP32 board support installed in the Arduino IDE
 -Required libraries: esp_now.h, WiFi.h, ESP32Servo.h, and semphr
