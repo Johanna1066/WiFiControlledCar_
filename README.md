@@ -48,14 +48,16 @@ Connect your Arduino Nano ESP32 to your computer and upload the code.
 Make sure to download the repository for the controller as well.
 
 ### Hardware Requirements
--Arduino Nano ESP32
--SteeringServo
--Engine
--USsensor (Ultrasonic Sensor)
+- Arduino Nano ESP32
+- SteeringServo
+- Engine
+- USsensor (Ultrasonic Sensor)
+
+  
 ### Software Requirements
--Arduino IDE
--ESP32 board support installed in the Arduino IDE
--Required libraries: esp_now.h, WiFi.h, ESP32Servo.h, and semphr
+- Arduino IDE
+- ESP32 board support installed in the Arduino IDE
+- Required libraries: esp_now.h, WiFi.h, ESP32Servo.h, and semphr
 
 
 ## Usage
