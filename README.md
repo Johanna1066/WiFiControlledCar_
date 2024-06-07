@@ -7,9 +7,9 @@ This project focuses on controlling a car using an Arduino Nano ESP32. It integr
 ## Table of Contents
 - [Features](#features)
 - [Setup and Installation](#setup-and-installation)
-  - [Setup](#setup)
   - [Hardware Requirements](#hardware-requirements)
   - [Software Requirements](#software-requirements)
+  - [Setup](#setup)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Acknowledgements](#acknowledgements)
@@ -22,6 +22,23 @@ This project focuses on controlling a car using an Arduino Nano ESP32. It integr
 - **ESP-NOW Communication**: Receives data from the controller Arduino Nano ESP32 using the ESP-NOW protocol.
 
 ## Setup and Installation
+
+
+### Hardware Requirements
+- Arduino Nano ESP32
+- Micro servo x2
+- DC motors x2
+- Motor dirver
+- Ultrasonic Sensor
+- Arduino PSU
+- Breadboards
+- Cables
+
+  
+### Software Requirements
+- Arduino IDE
+- ESP32 board support installed in the Arduino IDE
+- Required libraries: `esp_now.h`, `WiFi.h`, `ESP32Servo.h`, and `semphr`
 
 ### Setup
 
@@ -43,21 +60,6 @@ Make sure to download the repository for the controller as well.
 [ https://github.com/Johanna1066/WiFiControlledCar_Controller/](https://github.com/Johanna1066/WiFiControlledCar_Controller)
 
 
-### Hardware Requirements
-- Arduino Nano ESP32
-- Micro servo x2
-- DC motors x2
-- Motor dirver
-- Ultrasonic Sensor
-- Arduino PSU
-- Breadboards
-- Cables
-
-  
-### Software Requirements
-- Arduino IDE
-- ESP32 board support installed in the Arduino IDE
-- Required libraries: `esp_now.h`, `WiFi.h`, `ESP32Servo.h`, and `semphr`
 
 
 ## Usage
