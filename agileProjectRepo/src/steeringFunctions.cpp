@@ -6,6 +6,10 @@
 #include <WiFi.h>
 
 #include "steeringFunctions.h"
+#include "carNamespace.h"
+#include "Motors/engine.h"
+#include "Motors/steeringServo.h"
+#include "Sensors/usSensor.h"
 
 void setEnginesVelocity(int velocity, bool obsticle)
 {
