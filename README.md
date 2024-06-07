@@ -22,16 +22,6 @@ This project focuses on controlling a car using an Arduino Nano ESP32. It integr
 - **Sensor Data Handling**: Includes tasks for reading and handling sensor data.
 - **ESP-NOW Communication**: Receives data from the controller Arduino Nano ESP32 using the ESP-NOW protocol.
 
-## Components
-- Arduino Nano ESP32
-- Micro servo x2
-- DC motors x2
-- Motor dirver
-- Ultrasonic Sensor
-- Arduino PSU
-- Breadboards
-- Cables
-
 ## Setup and Installation
 
 ### Setup
@@ -56,9 +46,13 @@ Make sure to download the repository for the controller as well.
 
 ### Hardware Requirements
 - Arduino Nano ESP32
-- SteeringServo
-- Engine
-- USsensor (Ultrasonic Sensor)
+- Micro servo x2
+- DC motors x2
+- Motor dirver
+- Ultrasonic Sensor
+- Arduino PSU
+- Breadboards
+- Cables
 
   
 ### Software Requirements
