@@ -34,7 +34,7 @@ This project focuses on controlling a car using an Arduino Nano ESP32. It integr
 
 1. **Clone the Repository**
 
-   git clone [ https://github.com/Johanna1066/agileProjectTeamLkpg/](https://github.com/Johanna1066/WiFiControlledCar_Car)
+   git clone [ https://github.com/Johanna1066/WiFiControlledCar_Car/](https://github.com/Johanna1066/WiFiControlledCar_Car)
    
 3. **Open the Project in Arduino IDE**
 Open the .ino file from the cloned repository in the Arduino IDE.
