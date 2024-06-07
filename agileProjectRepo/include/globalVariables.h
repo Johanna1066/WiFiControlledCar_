@@ -1,4 +1,10 @@
+#ifndef _WCC_GLOBALVARIABLES_H
+#define _WCC_GLOBALVARIABLES_H
 #include <vector>
+
+#include "Motors/engine.h"
+#include "Motors/steeringServo.h"
+#include "Sensors/usSensor.h"
 
 namespace globalVariables
 {
@@ -18,3 +24,5 @@ namespace globalVariables
     int dataRecieved{};
 
 }
+
+#endif //_WCC_GLOBALVARIABLES_H
