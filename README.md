@@ -1,33 +1,37 @@
-# Arduino Joystick Controller Project
-##Car Control System Project
+# Car Control System Project
 
 This project focuses on controlling a car using an Arduino Nano ESP32. It integrates steering, velocity, obstacle detection, and communication using the ESP-NOW protocol.
 
-##Table of Contents
--[Features](#features)
--[Components](#components)
--[Setup and Installation](#setup-and-installation)
-   -[Setup](#setup)
-   -[Hardware Requirements](#hardware-requirements)
-   -[Software Requirements](#software-requrements)
-   -[Installation Steps](#installation-step)
--[Usage](#usage)
--[Contributing](#contributing)
--[Acknowledgements](#acknowledgements)
-##Features
--Steering Control: Uses SteeringServo objects assigned to specific pins.
--Velocity and Direction Control: Uses Engine objects assigned to specific pins.
--Obstacle Detection: Uses USsensor objects to ensure there are no obstacles blocking the car's path.
--Sensor Data Handling: Includes tasks for reading and handling sensor data.
--ESP-NOW Communication: Receives data from the controller Arduino Nano ESP32 using the ESP-NOW protocol.
-##Components
--Arduino Nano ESP32
--SteeringServo
--Engine
--USsensor (Ultrasonic Sensor)
--Other necessary components for car assembly
-##Setup and Installation
+## Table of Contents
+- [Features](#features)
+- [Components](#components)
+- [Setup and Installation](#setup-and-installation)
+  - [Setup](#setup)
+  - [Hardware Requirements](#hardware-requirements)
+  - [Software Requirements](#software-requirements)
+  - [Installation Steps](#installation-steps)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Acknowledgements](#acknowledgements)
+
+## Features
+- **Steering Control**: Uses `SteeringServo` objects assigned to specific pins.
+- **Velocity and Direction Control**: Uses `Engine` objects assigned to specific pins.
+- **Obstacle Detection**: Uses `USsensor` objects to ensure there are no obstacles blocking the car's path.
+- **Sensor Data Handling**: Includes tasks for reading and handling sensor data.
+- **ESP-NOW Communication**: Receives data from the controller Arduino Nano ESP32 using the ESP-NOW protocol.
+
+## Components
+- Arduino Nano ESP32
+- SteeringServo
+- Engine
+- USsensor (Ultrasonic Sensor)
+- Other necessary components for car assembly
+
+## Setup and Installation
+
 ###Setup
+
 1.**Clone the Repository**
 
 sh
