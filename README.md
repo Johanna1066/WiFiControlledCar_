@@ -24,10 +24,13 @@ This project focuses on controlling a car using an Arduino Nano ESP32. It integr
 
 ## Components
 - Arduino Nano ESP32
-- SteeringServo
-- Engine
-- USsensor (Ultrasonic Sensor)
-- Other necessary components for car assembly
+- Micro servo x2
+- DC motors x2
+- Motor dirver
+- Ultrasonic Sensor
+- Arduino PSU
+- Breadboards
+- Cables
 
 ## Setup and Installation
 
