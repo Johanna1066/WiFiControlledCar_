@@ -64,7 +64,7 @@ Make sure to download the repository for the controller as well.
 ### Software Requirements
 - Arduino IDE
 - ESP32 board support installed in the Arduino IDE
-- Required libraries: esp_now.h, WiFi.h, ESP32Servo.h, and semphr
+- Required libraries: `esp_now.h`, `WiFi.h`, `ESP32Servo.h`, and `semphr`
 
 
 ## Usage
