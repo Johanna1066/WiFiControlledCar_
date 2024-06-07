@@ -36,7 +36,7 @@ This project focuses on controlling a car using an Arduino Nano ESP32. It integr
 
   
 ### Software Requirements
-- Arduino IDE
+- VScode with platformIO or Arduino IDE
 - ESP32 board support installed in the Arduino IDE
 - Required libraries: `esp_now.h`, `WiFi.h`, `ESP32Servo.h`, and `semphr`
 
