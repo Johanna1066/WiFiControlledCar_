@@ -6,7 +6,6 @@ This project focuses on controlling a car using an Arduino Nano ESP32. It integr
 
 ## Table of Contents
 - [Features](#features)
-- [Components](#components)
 - [Setup and Installation](#setup-and-installation)
   - [Setup](#setup)
   - [Hardware Requirements](#hardware-requirements)
