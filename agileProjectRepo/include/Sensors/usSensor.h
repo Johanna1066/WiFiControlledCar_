@@ -1,3 +1,6 @@
+#ifndef _WCC_USSENSOR_H
+#define _WCC_USSENSOR_H
+
 /**
  * The sensor class is responsible for controlling the ultra sonic sensors
  * of the car. The members sensorTriggerPIN and sensorRecieverPIN are the
@@ -44,3 +47,5 @@ public:
      */
     void readDistance();
 };
+
+#endif //_WCC_USSENSOR_H
