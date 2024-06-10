@@ -58,15 +58,6 @@ void Engine::setVelocity(int inVelocity, bool obsticle)
         newVelocity = 0;
     }
 
-    if (newVelocity == currentVelocity)
-    {
-        return;
-    }
-    else
-    {
-        currentVelocity = newVelocity;
-    }
-
     if (newVelocity < 0)
     {
         if (direction)
