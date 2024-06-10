@@ -25,6 +25,7 @@
 
 void setup()
 {
+    Serial.begin(9600);
     initiate();
     if (xTaskCreate(sensorCheck, "*sensorCheck", 4096, NULL, 1, NULL) != pdPASS)
     {

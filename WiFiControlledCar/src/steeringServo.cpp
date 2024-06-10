@@ -41,6 +41,7 @@ void SteeringServo::setDirection(int inDirection)
      *  input value between 0 and 120, therefore the input
      *  is remapped.
      */
+    Serial.println(inDirection);
     int newDirection = map(inDirection, 0, 4096, 0, 120);
     if (newDirection == direction)
     {
