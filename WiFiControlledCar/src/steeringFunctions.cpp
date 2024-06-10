@@ -37,16 +37,16 @@ void onDataRecv(const uint8_t *mac, const uint8_t *incomingData, int len)
 {
     memcpy(&globalVariables::dataRecieved, incomingData, sizeof(globalVariables::dataRecieved));
 
-    /**
-     * 10000 is added to the data sent from the controller if the data
-     * is supposed to be a servo command to distinguish from engine commands.
-     * Therefore the data has to be modified before sending the actual
-     * command to the servo object.
-     */
     if (globalVariables::dataRecieved >= 10000)
     {
         if (xSemaphoreTake(globalVariables::servoHandle, portMAX_DELAY) == pdTRUE)
         {
+            /**
+             * 10000 is added to the data sent from the controller if the data
+             * is supposed to be a servo command, to distinguish from engine commands.
+             * Therefore the data has to be modified before sending the actual
+             * command to the servo object.
+             */
             globalVariables::dataRecieved -= 10000;
 
             globalVariables::servo.setDirection(globalVariables::dataRecieved);
