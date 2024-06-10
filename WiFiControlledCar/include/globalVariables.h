@@ -9,8 +9,8 @@
 namespace globalVariables
 {
     std::vector<Engine> engines;
-    Engine rightEngine(A1, D5, D6);
-    Engine leftEngine(A2, D3, D4);
+    Engine rightEngine(A1, D6, D5);
+    Engine leftEngine(A2, D4, D3);
     SemaphoreHandle_t engineHandle;
 
     SteeringServo servo(9);
