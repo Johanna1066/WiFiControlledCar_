@@ -48,6 +48,16 @@ void Engine::setVelocity(int inVelocity, bool obsticle)
 {
     int newVelocity = map(inVelocity, 0, 4096, -255, 255);
 
+    if ((newVelocity > -50) && (newVelocity < 20)) // Because of the hardware used there is a need for stabilizing
+    {                                              // of the numbers recieved from the method call
+        newVelocity = 0;
+    }
+
+    if (obsticle && (newVelocity >= 0))
+    {
+        newVelocity = 0;
+    }
+
     if (newVelocity == currentVelocity)
     {
         return;
@@ -55,16 +65,6 @@ void Engine::setVelocity(int inVelocity, bool obsticle)
     else
     {
         currentVelocity = newVelocity;
-    }
-
-    if ((newVelocity > -50) && (newVelocity < 20)) // Because of the hardware used there is a need for stabilizing
-    {                                              // of the numbers recieved from the method call
-        newVelocity = 0;
-    }
-
-    if (obsticle && (newVelocity > 0))
-    {
-        newVelocity = 0;
     }
 
     if (newVelocity < 0)

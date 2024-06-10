@@ -138,6 +138,7 @@ void sensorCheck(void *parameters)
                 if (globalVariables::hinderForwardMovement)
                 {
                     globalVariables::hinderForwardMovement = false;
+
                 }
                 xSemaphoreGive(globalVariables::engineHandle);
             }
