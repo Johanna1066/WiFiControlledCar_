@@ -39,7 +39,7 @@ void onDataRecv(const uint8_t *mac, const uint8_t *incomingData, int len)
 
     if (globalVariables::dataRecieved >= 10000)
     {
-        if (xSemaphoreTake(globalVariables::servoHandle, portMAX_DELAY) == pdTRUE)
+        if (xSemaphoreTake(globalVariables::servoHandle, 100) == pdTRUE)
         {
             /**
              * 10000 is added to the data sent from the controller if the data
@@ -56,7 +56,7 @@ void onDataRecv(const uint8_t *mac, const uint8_t *incomingData, int len)
     }
     else if ((globalVariables::dataRecieved >= 0) && (globalVariables::dataRecieved <= 4096))
     {
-        if (xSemaphoreTake(globalVariables::engineHandle, portMAX_DELAY) == pdTRUE)
+        if (xSemaphoreTake(globalVariables::engineHandle, 100) == pdTRUE)
         {
 
             setEnginesVelocity(globalVariables::dataRecieved, globalVariables::hinderForwardMovement);
@@ -122,7 +122,7 @@ void sensorCheck(void *parameters)
 
         if (globalVariables::reading < globalVariables::safeServoDistance)
         {
-            if (xSemaphoreTake(globalVariables::engineHandle, portMAX_DELAY) == pdTRUE)
+            if (xSemaphoreTake(globalVariables::engineHandle, 100) == pdTRUE)
             {
                 if (!globalVariables::hinderForwardMovement)
                 {
@@ -133,7 +133,7 @@ void sensorCheck(void *parameters)
         }
         else
         {
-            if (xSemaphoreTake(globalVariables::engineHandle, portMAX_DELAY) == pdTRUE)
+            if (xSemaphoreTake(globalVariables::engineHandle, 100) == pdTRUE)
             {
                 if (globalVariables::hinderForwardMovement)
                 {

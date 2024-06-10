@@ -11,10 +11,11 @@ namespace globalVariables
     std::vector<Engine> engines;
     Engine rightEngine(A1, D6, D5);
     Engine leftEngine(A2, D4, D3);
-    SemaphoreHandle_t engineHandle;
-
     SteeringServo servo(9);
     const int safeServoDistance{20};
+
+
+    SemaphoreHandle_t engineHandle;
     SemaphoreHandle_t servoHandle;
 
     USsensor sensor(D8, D7);
