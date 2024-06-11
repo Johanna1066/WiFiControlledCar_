@@ -1,5 +1,7 @@
 
-# WiFi controlled car - **car** project README
+# WiFi controlled car
+
+## **car** project README
 
 This project focuses on controlling a car using an Arduino Nano ESP32. It integrates steering, velocity, obstacle detection, and recieving data from a controller using the ESP-NOW protocol.
 
